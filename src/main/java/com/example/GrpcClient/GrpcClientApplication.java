@@ -20,6 +20,6 @@ private	ClientServiceGrpcClient clientServiceGrpcClient;
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("GrpcClientApplication.run"+ clientServiceGrpcClient.getStockPrice("AAPL"));
+		 clientServiceGrpcClient.getStreamStockprice("AAPL");
 	}
 }
